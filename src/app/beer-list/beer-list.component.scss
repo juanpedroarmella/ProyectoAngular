@@ -1,8 +1,21 @@
 h1{
-    color: blue;
+    color: black;
+    
 }
 
 .clearance {
     border:2px solid green;
     background-color: lightgreen;
 }
+td{
+    vertical-align: middle;
+}
+
+input{
+    max-width: 40px;
+    text-align: center;
+}
+button{
+    margin-bottom: 5px;
+}
+
