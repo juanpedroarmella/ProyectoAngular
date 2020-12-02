@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BreweryAboutComponent } from './brewery-about/brewery-about.component';
-import { BreweryBeersComponent } from './brewery-beers/brewery-beers.component';
+import { GameShopContactComponent } from './gameshop-contact/gameshop-contact.component';
+import { GameShopGamesComponent } from './gameshop-games/gameshop-games.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'beers',
+    redirectTo: 'games',
     pathMatch: 'full',
   },
   {
-    path: 'beers',
-    component: BreweryBeersComponent,
+    path: 'games',
+    component: GameShopGamesComponent,
   },
   {
-    path: 'about',
-    component: BreweryAboutComponent,
+    path: 'contacto',
+    component: GameShopContactComponent,
   }
 ];
 

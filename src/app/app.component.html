@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand">{{title}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
         <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/about']">About</a>
+        <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
       </li>
     </ul>
   </div>
@@ -17,4 +17,4 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
-<footer class="text-center bg-dark " > {{title}} 2020 ©</footer>
+<footer class="text-center bg-primary " > {{title}} 2020 ©</footer>
