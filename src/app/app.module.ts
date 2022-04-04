@@ -5,12 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameListComponent } from './game-list/game-list.component';
 
-
 import { FormsModule } from '@angular/forms';
 import { GameShopContactComponent } from './gameshop-contact/gameshop-contact.component';
 import { GameShopGamesComponent } from './gameshop-games/gameshop-games.component';
 import { CartComponent } from './cart/cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,14 +19,10 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
     GameShopContactComponent,
     GameShopGamesComponent,
     CartComponent,
-    InputIntegerComponent
+    InputIntegerComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

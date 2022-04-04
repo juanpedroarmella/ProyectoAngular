@@ -1,4 +1,10 @@
-.container{
-    margin-top: 10px;
+.container {
+  margin-top: 10px;
+  margin-left: 35%;
 }
-
+@media (max-width: 600px) {
+  .container {
+    margin-left: 0;
+    overflow: scroll;
+  }
+}

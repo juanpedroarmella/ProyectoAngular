@@ -1,6 +1,6 @@
-<p>Carrito de compras</p> 
-<ul>
-    <li *ngFor="let game of (cartList$ | async)">
-        {{game.name}}: {{game.quantity}}
-    </li>
+<p class="text-center">Carrito de compras</p>
+<ul class="text-center">
+  <li *ngFor="let game of cartList$ | async">
+    {{ game.name }}: {{ game.quantity }}
+  </li>
 </ul>
