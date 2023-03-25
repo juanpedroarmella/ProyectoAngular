@@ -9,7 +9,8 @@ import { Game } from './Game';
   styleUrls: ['./game-list.component.scss'],
 })
 export class GameListComponent implements OnInit {
-  games: Game[] = [];
+  public games: Game[] = [];
+  public isLoading: boolean = true;
 
   constructor(
     private cart: GameCartService,
@@ -17,7 +18,11 @@ export class GameListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.gamesDataService.getAll().subscribe((games) => (this.games = games));
+    this.isLoading = true;
+    this.gamesDataService.getAll().subscribe((games) => {
+      this.games = games;
+      this.isLoading = false;
+    });
   }
 
   addToCart(game): void {

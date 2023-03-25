@@ -6,19 +6,14 @@ import { Game } from '../game-list/Game';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.scss']
+  styleUrls: ['./cart.component.scss'],
 })
 export class CartComponent implements OnInit {
-
   cartList$: Observable<Game[]>;
 
-  constructor(private cart: GameCartService) { 
+  constructor(cart: GameCartService) {
     this.cartList$ = cart.cartList.asObservable();
-    
   }
 
-  ngOnInit(): void {
-  }
-  
-
+  ngOnInit(): void {}
 }

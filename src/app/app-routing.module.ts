@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GameShopContactComponent } from './gameshop-contact/gameshop-contact.component';
-import { GameShopGamesComponent } from './gameshop-games/gameshop-games.component';
+import { ContactComponent } from './contact/contact.component';
+import { GamesComponent } from './games/games.component';
 
 const routes: Routes = [
   {
@@ -11,16 +11,16 @@ const routes: Routes = [
   },
   {
     path: 'games',
-    component: GameShopGamesComponent,
+    component: GamesComponent,
   },
   {
     path: 'contacto',
-    component: GameShopContactComponent,
-  }
+    component: ContactComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

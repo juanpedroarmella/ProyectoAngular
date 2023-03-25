@@ -1,6 +1,13 @@
-<p class="text-center">Carrito de compras</p>
-<ul class="text-center">
-  <li *ngFor="let game of cartList$ | async">
-    {{ game.name }}: {{ game.quantity }}
-  </li>
-</ul>
+<section>
+  <h1 class="text-center py-2">Carrito de compras</h1>
+  <ng-container *ngIf="(cartList$ | async).length; else noItems">
+    <ul class="text-center">
+      <li *ngFor="let game of cartList$ | async">
+        {{ game.name }}: {{ game.quantity }}
+      </li>
+    </ul>
+  </ng-container>
+  <ng-template #noItems>
+    <p class="font-weight-light text-center">No hay objetos en el carrito</p>
+  </ng-template>
+</section>
