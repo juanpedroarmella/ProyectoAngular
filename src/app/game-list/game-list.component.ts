@@ -18,7 +18,6 @@ export class GameListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.isLoading = true;
     this.gamesDataService.getAll().subscribe((games) => {
       this.games = games;
       this.isLoading = false;

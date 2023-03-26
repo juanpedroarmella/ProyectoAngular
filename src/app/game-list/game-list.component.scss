@@ -3,9 +3,17 @@ h1 {
 }
 
 .clearance {
-  border: 2px solid green;
   background-color: lightgreen;
 }
 td {
   vertical-align: middle;
+}
+
+section {
+  margin: auto 5vw;
+  overflow-x: auto;
+}
+
+img {
+  width: 150px;
 }
