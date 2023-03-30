@@ -31,6 +31,6 @@ export class GameListComponent implements OnInit {
   }
 
   maxReached(m: string) {
-    alert(m);
+    console.log(m);
   }
 }
